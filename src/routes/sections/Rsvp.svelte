@@ -2,8 +2,10 @@
 	id="rsvp"
 	class="w-full min-h-[50vh] flex flex-col justify-center items-center text-center relative px-10 py-20 bg-background"
 >
-	<h1 class="text-5xl font-serif leading-normal mb-10">
-		We hope you’ll join us on <br /> this special day
+	<h1
+		class="text-4xl md:text-5xl font-serif leading-normal md:leading-normal mb-10 max-w-[560px] md:max-w-[700px]"
+	>
+		We hope you’ll join us on this special day
 	</h1>
 	<a
 		href="https://www.theknot.com/"

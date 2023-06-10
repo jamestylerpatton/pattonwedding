@@ -11,5 +11,5 @@
 		<slot />
 	</main>
 
-	<div class="px-20 py-10 text-right">#pattonpending</div>
+	<div class="px-5 md:px-20 py-10 text-right">#pattonpending</div>
 </div>
