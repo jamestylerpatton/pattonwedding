@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'UltraSystemSans';
+	src: url('/UltraSystemSans/font.woff2') format('woff2'),
+		url('/UltraSystemSans/font.woff') format('woff');
+}
+@font-face {
+	font-family: 'LaLuxesScript';
+	src: url('/LaLuxesScript/font.woff2') format('woff2'),
+		url('/LaLuxesScript/font.woff') format('woff');
+}
+@font-face {
+	font-family: 'LaLuxesSerif';
+	src: url('/LaLuxesSerif/font.woff2') format('woff2'),
+		url('/LaLuxesSerif/font.woff') format('woff');
+}
