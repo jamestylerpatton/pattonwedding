@@ -3,6 +3,7 @@
 	import Details from './sections/Details.svelte';
 	import Accomodations from './sections/Accomodations.svelte';
 	import Schedule from './sections/Schedule.svelte';
+	import Faq from './sections/Faq.svelte';
 	import Rsvp from './sections/Rsvp.svelte';
 </script>
 
@@ -15,6 +16,7 @@
 <Details />
 <Accomodations />
 <Schedule />
+<Faq />
 <Rsvp />
 
 <style lang="postcss">

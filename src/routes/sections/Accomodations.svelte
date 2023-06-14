@@ -3,8 +3,8 @@
 	class="w-full min-h-[80vh] flex flex-col justify-center items-center relative px-10 bg-gradient-to-b from-[#FFFFFF] to-[#FAFAFA] text-black py-10"
 >
 	<div class="text-center">
-		<p class="text-xs font-sans mb-10">Accomodations</p>
-		<h2 class="font-serif text-5xl mb-10">The Ace Hotel, Downtown</h2>
+		<h2 class="text-xs font-sans mb-10">Accomodations</h2>
+		<h3 class="font-serif text-5xl mb-10">The Ace Hotel, Downtown</h3>
 		<p class="text-xs lg:text-base font-sans mb-2">
 			There is a block of rooms reserved at The Ace Hotel in Downtown LA.
 		</p>
