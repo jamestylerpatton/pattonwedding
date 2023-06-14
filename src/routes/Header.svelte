@@ -36,8 +36,8 @@
 			Hotel
 		</a>
 		<a href="#schedule" class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base">Schedule</a>
+		<a href="#faq" class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base">Faq</a>
 		<!-- <a href="/" class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base">Registry</a> -->
-		<!-- <a href="/" class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base">FAQ</a> -->
 		<a
 			href="https://www.theknot.com/"
 			target="_blank"
