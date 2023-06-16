@@ -23,7 +23,7 @@
 	:global(html) {
 		background-color: theme(colors.white);
 		color: theme(colors.text);
-		@apply scroll-smooth;
+		/* @apply scroll-smooth; */
 	}
 	:global(body) {
 		font-family: theme(fontFamily.body);

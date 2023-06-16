@@ -1,3 +1,26 @@
+<script>
+	const blowConfetti = (elem) => {
+		if (typeof window.party === 'undefined') {
+			return;
+		}
+		window.party.confetti(elem);
+	};
+
+	const navigateToRsvp = (e) => {
+		e.preventDefault();
+
+		blowConfetti(e.target);
+
+		setTimeout(() => {
+			window.location.href = 'https://www.theknot.com/';
+		}, 1000);
+	};
+</script>
+
+<svelte:head>
+	<script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+</svelte:head>
+
 <div
 	id="rsvp"
 	class="w-full min-h-[50vh] flex flex-col justify-center items-center text-center relative px-10 py-20 bg-background"
@@ -8,10 +31,11 @@
 		We hope you’ll join us on this special day
 	</h3>
 	<a
+		on:click={navigateToRsvp}
 		href="https://www.theknot.com/"
 		target="_blank"
 		rel="noopener noreferrer"
-		class="inline-block uppercase bg-transparent focus:shadow-outline focus:outline-none text-text border-2 border-text py-5 px-10 lg:px-20 rounded cursor-pointer text-sm lg:text-base"
+		class="inline-block uppercase bg-transparent focus:shadow-outline focus:outline-none text-text border-2 border-text py-5 px-10 lg:px-20 rounded cursor-pointer text-sm lg:text-base hover:bg-text hover:text-background transition-all"
 	>
 		RSVP
 	</a>

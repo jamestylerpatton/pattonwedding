@@ -15,7 +15,9 @@
 			{days} days until
 		</p>
 		<h1 class="text-[15vw] md:text-[10vw] xl:text-[130px] leading-none font-serif uppercase">
-			Rebekah <br /> & Tyler
+			<span>Rebekah</span> <br />
+			<span>&</span>
+			<span>Tyler</span>
 		</h1>
 		<p class="text-[12vw] md:text-[6vw] xl:text-[80px] font-script opacity-70">tie the knot</p>
 	</div>

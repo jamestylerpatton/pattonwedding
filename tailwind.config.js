@@ -12,6 +12,7 @@ export default {
 				beige: '#FDF7F2',
 				brown: '#AB6C49',
 				black: '#322A27',
+				olive: '#8D8D6A',
 
 				background: '#FDF7F2',
 				text: '#AB6C49'

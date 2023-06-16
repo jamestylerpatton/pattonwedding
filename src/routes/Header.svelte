@@ -3,6 +3,16 @@
 
 	export let header = null;
 
+	const handleAnchorClick = (e) => {
+		e.preventDefault();
+		const href = e.currentTarget.getAttribute('href');
+		const offsetTop = document.querySelector(href).offsetTop;
+		window.scrollTo({
+			top: offsetTop,
+			behavior: 'smooth'
+		});
+	};
+
 	onMount(async () => {
 		function handleScroll() {
 			if (window.pageYOffset > 20) {
@@ -32,17 +42,29 @@
 		>#pattonpending</span
 	>
 	<nav class="flex items-center">
-		<a href="#accommodations" class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base">
+		<a
+			href="#accommodations"
+			class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base"
+			on:click={handleAnchorClick}
+		>
 			Hotel
 		</a>
-		<a href="#schedule" class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base">Schedule</a>
-		<a href="#faq" class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base">Faq</a>
+		<a
+			href="#schedule"
+			class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base"
+			on:click={handleAnchorClick}>Schedule</a
+		>
+		<a
+			href="#faq"
+			class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base"
+			on:click={handleAnchorClick}>Faq</a
+		>
 		<!-- <a href="/" class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base">Registry</a> -->
 		<a
 			href="https://www.theknot.com/"
 			target="_blank"
 			rel="noopener noreferrer"
-			class="block uppercase bg-transparent focus:shadow-outline focus:outline-none text-text border-2 border-text py-5 px-5 lg:px-10 rounded cursor-pointer text-sm lg:text-base"
+			class="block uppercase bg-transparent focus:shadow-outline focus:outline-none text-text border-2 border-text py-5 px-5 lg:px-10 rounded cursor-pointer text-sm lg:text-base hover:bg-text hover:text-background transition-all"
 		>
 			RSVP
 		</a>

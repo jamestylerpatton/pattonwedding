@@ -15,7 +15,7 @@
 			href="https://acehotel.com/los-angeles/"
 			target="_blank"
 			rel="noopener noreferrer"
-			class="inline-block uppercase bg-transparent focus:shadow-outline focus:outline-none text-text border-2 border-text py-5 px-10 lg:px-20 rounded cursor-pointer text-sm lg:text-base"
+			class="inline-block uppercase bg-transparent focus:shadow-outline focus:outline-none text-text border-2 border-text py-5 px-10 lg:px-20 rounded cursor-pointer text-sm lg:text-base hover:bg-text hover:text-background transition-all"
 		>
 			Book Online
 		</a>
