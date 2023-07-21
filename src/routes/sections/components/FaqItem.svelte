@@ -14,13 +14,13 @@
 	<div
 		on:click={toggle}
 		on:keypress={toggle}
-		class="cursor-pointer flex justify-between items-center space-x-5 px-5 items-center h-16 transition hover:bg-beige"
+		class="cursor-pointer flex justify-between items-center space-x-5 px-5 py-5 min-h-16 transition hover:bg-beige"
 	>
 		<!-- <i class="fas fa-plus" /> -->
 		<h3 class="text-base">{item.question}</h3>
 
 		<svg
-			class="transition-all {isOpen ? '-rotate-45' : ''}"
+			class="transition-all shrink-0 {isOpen ? '-rotate-45' : ''}"
 			width="14"
 			height="14"
 			viewBox="0 0 14 14"

@@ -80,7 +80,7 @@
 			<img class="mb-2" src={photo4} alt="" />
 		</div>
 	</div>
-	<div class="md:w-2/3 text-black pl-10">
+	<div class="md:w-2/3 text-black md:pl-10">
 		<h3 class="text-5xl lg:text-8xl font-serif mb-10">FAQ</h3>
 
 		<div>
