@@ -1,6 +1,6 @@
 <div
 	id="details"
-	class="w-full flex flex-col md:flex-row justify-evenly md:items-center relative px-10 py-10 bg-olive text-background"
+	class="w-full flex flex-col md:flex-row justify-evenly md:items-center relative px-10 py-10 bg-darkbrown text-background"
 >
 	<div class="px-4 mb-10 md:mb-0">
 		<p class="text-3xl font-serif mb-2">Location</p>

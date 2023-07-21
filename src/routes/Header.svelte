@@ -43,20 +43,20 @@
 	>
 	<nav class="flex items-center">
 		<a
+			href="#schedule"
+			class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase lg:text-base"
+			on:click={handleAnchorClick}>Schedule</a
+		>
+		<a
 			href="#accommodations"
-			class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base"
+			class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase lg:text-base"
 			on:click={handleAnchorClick}
 		>
 			Hotel
 		</a>
 		<a
-			href="#schedule"
-			class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base"
-			on:click={handleAnchorClick}>Schedule</a
-		>
-		<a
 			href="#faq"
-			class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base"
+			class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase lg:text-base"
 			on:click={handleAnchorClick}>Faq</a
 		>
 		<!-- <a href="/" class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base">Registry</a> -->

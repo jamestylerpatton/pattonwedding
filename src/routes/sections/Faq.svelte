@@ -2,9 +2,10 @@
 	import { reveal } from 'svelte-reveal';
 
 	import FaqItem from './components/FaqItem.svelte';
-	import photo1 from '$lib/images/photo1.png';
-	import photo2 from '$lib/images/photo2.png';
-	import photo3 from '$lib/images/photo3.png';
+	import photo1 from '$lib/images/pb1.jpg';
+	import photo2 from '$lib/images/pb2.jpg';
+	import photo3 from '$lib/images/pb3.jpg';
+	import photo4 from '$lib/images/pb4.jpg';
 
 	const faqItems = [
 		{
@@ -28,14 +29,19 @@
 				'The wedding ceremony will begin promptly at 5:00pm. We encourage guests to arrive at least 30 minutes prior to the start time.'
 		},
 		{
+			question: 'What if I am running late to the ceremony?',
+			answer:
+				'The ceremony will be starting promptly at 5:00 p.m. We recommend guests arrive around 4:30 p.m. so there is time to mingle, grab a drink, and find a seat. If you happen to be late, our coordinator will let you know if they are still allowing guests in or if you will need to wait until the ceremony is over. If that happens, you will still be able to attend the cocktail hour and reception so hang tight and we will see you at the cocktail hour! Thank you for understanding!'
+		},
+		{
 			question: 'Can I take photos during the ceremony?',
 			answer:
-				'To ensure that everyone can enjoy the moment fully, we kindly request that you refrain from taking photos or using your mobile devices during the ceremony. We have hired professional photographers who will capture the beautiful moments for us to share. During the reception, you are welcome and encouraged to take photos! Feel free to use our wedding hashtag, #pattonpending, so we can see all the fun!'
+				'To ensure that everyone can enjoy the moment fully, please refrain from taking photos or using your mobile devices during the ceremony. We have hired professional photographers who will capture the beautiful moments for us to share. During the reception, you are welcome and encouraged to take photos! Feel free to use our wedding hashtag, #pattonpending, so we can see all the fun!'
 		},
 		{
 			question: 'Is there a gift registry?',
 			answer:
-				'We appreciate your presence at our wedding, and your well wishes are the greatest gift we could ask for. However, if you would like to give a gift, we have created a registry on Crate & Barrel to help guide you.'
+				'We appreciate your presence at our wedding, and your well wishes are the greatest gift we could ask for! However, if you would like to give a gift, instead of a traditional gift registry, we kindly request monetary gifts for our wedding. <a class="underline" href="https://buy.stripe.com/8wM2bXgEM9LpdK8bIJ" target="_blank">Here is a direct link to our fund</a> where you can choose the amount you wish to give. Your generous contributions will be used to create lasting memories and support our future goals together. We appreciate your love and support on this joyous occasion.'
 		},
 		{
 			question: 'Will there be parking available at the venue?',
@@ -54,22 +60,7 @@
 		{
 			question: 'Are kids welcome?',
 			answer:
-				'While we love all your children this will be an adult only event. The only exception will be the children apart of our wedding party! Please refer to the ‘RSVP’ tab to see if we are able to accommodate your children. We hope that you will see this as an opportunity to let down your hair down and enjoy the party with us!'
-		},
-		{
-			question: 'Will the ceremony and reception be indoors or outdoors?',
-			answer:
-				'The ceremony will be held outdoors and the receptions will be held indoors with large doors open to the courtyard. Outdoor space heaters will be provided.'
-		},
-		{
-			question: 'How does seating work?',
-			answer:
-				'The ceremony will have open seating, so you can sit wherever you please. However, for the reception, we will carefully arrange tables so that guests are seated with those they know or their plus ones.'
-		},
-		{
-			question: 'What do I do if I am late to the ceremony?',
-			answer:
-				'The ceremony will be starting promptly at 5:30 p.m. We recommend guests arrive around 5:00 p.m. so there is time to mingle, grab a drink, and find a seat. If you happen to be late, our coordinator will let you know if they are still allowing guests in or if you will need to wait until the ceremony is over. If that happens, you will still be able to attend the reception so hang tight and we will see you at the reception! Thank you for understanding!'
+				'While we love all your children, this will be an adult only event. The only exception will be the children apart of our wedding party! Please refer to the ‘RSVP’ tab to see if we are able to accommodate your children. We hope that you will see this as an opportunity to let down your hair down and enjoy the party with us!'
 		}
 	];
 </script>
@@ -79,10 +70,14 @@
 	class="w-full max-w-[1400px] mx-auto flex justify-center relative px-10 py-20 lg:py-40 bg-white"
 >
 	<div class="hidden md:flex w-1/3 justify-center">
-		<div use:reveal={{ y: 20 }} class="p-0 rounded shadow-lg -mt-24 lg:-mt-48 self-start">
+		<div
+			use:reveal={{ y: 20 }}
+			class="p-2 rounded shadow-lg -mt-24 lg:-mt-48 self-start max-w-[250px] bg-white"
+		>
 			<img class="mb-2" src={photo1} alt="" />
 			<img class="mb-2" src={photo2} alt="" />
 			<img class="mb-2" src={photo3} alt="" />
+			<img class="mb-2" src={photo4} alt="" />
 		</div>
 	</div>
 	<div class="md:w-2/3 text-black pl-10">

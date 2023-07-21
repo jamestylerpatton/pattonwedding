@@ -17,3 +17,9 @@
 	src: url('/LaLuxesSerif/font.woff2') format('woff2'),
 		url('/LaLuxesSerif/font.woff') format('woff');
 }
+
+@font-face {
+	font-family: 'GTAmericaExpanded';
+	src: url('/GTAmericaExpanded/gt-america-expanded-medium.woff2') format('woff2'),
+		url('/GTAmericaExpanded/gt-america-expanded-medium.woff') format('woff');
+}

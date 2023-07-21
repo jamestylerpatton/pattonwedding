@@ -6,11 +6,12 @@ export default {
 			colors: {
 				// theme 1
 				green: '#A3B3A7',
-				'dark-green': '#727D79',
+				darkgreen: '#727D79',
 
 				// theme 2
 				beige: '#FDF7F2',
 				brown: '#AB6C49',
+				darkbrown: '#675145',
 				black: '#322A27',
 				olive: '#8D8D6A',
 
@@ -18,8 +19,10 @@ export default {
 				text: '#AB6C49'
 			},
 			fontFamily: {
-				body: ['"UltraSystemSans"', 'sans-serif'],
-				sans: ['"UltraSystemSans"', 'sans-serif'],
+				body: ['"GTAmericaExpanded"', 'sans-serif'],
+				sans: ['"GTAmericaExpanded"', 'sans-serif'],
+				// body: ['"UltraSystemSans"', 'sans-serif'],
+				// sans: ['"UltraSystemSans"', 'sans-serif'],
 				serif: ['"LaLuxesSerif"', 'serif'],
 				script: ['"LaLuxesScript"', 'serif']
 			}

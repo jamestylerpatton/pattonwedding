@@ -1,6 +1,7 @@
 <script>
 	import Hero from './sections/Hero.svelte';
 	import Details from './sections/Details.svelte';
+	import ParallaxPhoto from './sections/ParallaxPhoto.svelte';
 	import Accomodations from './sections/Accomodations.svelte';
 	import Schedule from './sections/Schedule.svelte';
 	import Faq from './sections/Faq.svelte';
@@ -13,9 +14,10 @@
 </svelte:head>
 
 <Hero />
+<ParallaxPhoto />
 <Details />
-<Accomodations />
 <Schedule />
+<Accomodations />
 <Faq />
 <Rsvp />
 

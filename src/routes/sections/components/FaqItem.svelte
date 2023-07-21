@@ -17,7 +17,7 @@
 		class="cursor-pointer flex justify-between items-center space-x-5 px-5 items-center h-16 transition hover:bg-beige"
 	>
 		<!-- <i class="fas fa-plus" /> -->
-		<h3 class="text-sm">{item.question}</h3>
+		<h3 class="text-base">{item.question}</h3>
 
 		<svg
 			class="transition-all {isOpen ? '-rotate-45' : ''}"
@@ -36,8 +36,8 @@
 	<!-- Content -->
 	{#if isOpen}
 		<div transition:slide={{ duration: 300 }} class="p-5">
-			<p class="leading-6 font-light text-justify text-xs">
-				{item.answer}
+			<p class="leading-6 font-light text-justify text-sm">
+				{@html item.answer}
 			</p>
 		</div>
 	{/if}
