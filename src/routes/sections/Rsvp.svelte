@@ -12,7 +12,7 @@
 		blowConfetti(e.target);
 
 		setTimeout(() => {
-			window.location.href = 'https://www.theknot.com/';
+			window.location.href = '/rsvp';
 		}, 1000);
 	};
 </script>
@@ -32,9 +32,7 @@
 	</h3>
 	<a
 		on:click={navigateToRsvp}
-		href="https://www.theknot.com/"
-		target="_blank"
-		rel="noopener noreferrer"
+		href="/rsvp"
 		class="inline-block uppercase bg-transparent focus:shadow-outline focus:outline-none text-text border-2 border-text py-5 px-10 lg:px-20 rounded cursor-pointer text-sm lg:text-base hover:bg-text hover:text-background transition-all"
 	>
 		RSVP
