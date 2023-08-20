@@ -16,7 +16,10 @@ export default {
 				olive: '#8D8D6A',
 
 				background: '#FDF7F2',
-				text: '#AB6C49'
+				text: '#AB6C49',
+
+				successGreen: '#05A660',
+				errorRed: '#E53535'
 			},
 			fontFamily: {
 				body: ['"GTAmericaExpanded"', 'sans-serif'],

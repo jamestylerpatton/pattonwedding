@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
 
 	export let header = null;
 
@@ -38,35 +39,35 @@
 	bind:this={header}
 	class="fixed z-10 top-0 left-0 w-full flex justify-between items-center px-5 md:px-20 py-10 transition-all duration-300 ease-in-out bg-background bg-opacity-50"
 >
-	<span class="block mr-6 lg:mr-12 py-5 text-sm lg:text-base opacity-30 cursor-default"
-		>#pattonpending</span
+	<a href="/" class="block mr-6 lg:mr-12 py-5 text-sm lg:text-base opacity-30 cursor-default"
+		>#pattonpending</a
 	>
-	<nav class="flex items-center">
-		<a
-			href="#schedule"
-			class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase lg:text-base"
-			on:click={handleAnchorClick}>Schedule</a
-		>
-		<a
-			href="#accommodations"
-			class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase lg:text-base"
-			on:click={handleAnchorClick}
-		>
-			Hotel
-		</a>
-		<a
-			href="#faq"
-			class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase lg:text-base"
-			on:click={handleAnchorClick}>Faq</a
-		>
-		<!-- <a href="/" class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base">Registry</a> -->
-		<a
-			href="https://www.theknot.com/"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="block uppercase bg-transparent focus:shadow-outline focus:outline-none text-text border-2 border-text py-5 px-5 lg:px-10 rounded cursor-pointer text-sm lg:text-base hover:bg-text hover:text-background transition-all"
-		>
-			RSVP
-		</a>
-	</nav>
+	{#if $page.url.pathname === '/'}
+		<nav class="flex items-center">
+			<a
+				href="#schedule"
+				class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase lg:text-base"
+				on:click={handleAnchorClick}>Schedule</a
+			>
+			<a
+				href="#accommodations"
+				class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase lg:text-base"
+				on:click={handleAnchorClick}
+			>
+				Hotel
+			</a>
+			<a
+				href="#faq"
+				class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase lg:text-base"
+				on:click={handleAnchorClick}>Faq</a
+			>
+			<!-- <a href="/" class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base">Registry</a> -->
+			<a
+				href="/rsvp"
+				class="block uppercase bg-transparent focus:shadow-outline focus:outline-none text-text border-2 border-text py-5 px-5 lg:px-10 rounded cursor-pointer text-sm lg:text-base hover:bg-text hover:text-background transition-all"
+			>
+				RSVP
+			</a>
+		</nav>
+	{/if}
 </header>

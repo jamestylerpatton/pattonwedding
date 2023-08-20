@@ -9,7 +9,7 @@
 			There is a block of rooms reserved at The Ace Hotel in Downtown LA.
 		</p>
 		<p class="text-xs lg:text-base font-sans mb-10">
-			Just mention the Patton wedding when you reserve.
+			If you'd like to join, let us know and we will reserve another for you!
 		</p>
 		<a
 			href="https://acehotel.com/los-angeles/"
