@@ -39,9 +39,7 @@
 	bind:this={header}
 	class="fixed z-10 top-0 left-0 w-full flex justify-between items-center px-5 md:px-20 py-10 transition-all duration-300 ease-in-out bg-background bg-opacity-50"
 >
-	<a href="/" class="block mr-6 lg:mr-12 py-5 text-sm lg:text-base opacity-30 cursor-default"
-		>#pattonpending</a
-	>
+	<a href="/" class="block mr-6 lg:mr-12 py-6 text-sm lg:text-base opacity-30">#pattonpending</a>
 	{#if $page.url.pathname === '/'}
 		<nav class="flex items-center">
 			<a

@@ -1,6 +1,6 @@
 <script>
 	import Hero from './sections/Hero.svelte';
-	import Details from './sections/Details.svelte';
+	// import Details from './sections/Details.svelte';
 	import DateDetails from './sections/DateDetails.svelte';
 	import ParallaxPhoto from './sections/ParallaxPhoto.svelte';
 	import Accomodations from './sections/Accomodations.svelte';
