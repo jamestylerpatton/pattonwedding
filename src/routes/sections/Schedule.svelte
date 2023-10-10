@@ -22,7 +22,7 @@
 				<div class="right-content__column">
 					<div class="w-5/6" use:reveal={{ delay: 100 }}>
 						<h4 class="text-4xl font-serif mb-4">Cocktail Hour</h4>
-						<p class="text-base font-sans mb-4">5:45PM</p>
+						<p class="text-base font-sans mb-4">5:30PM</p>
 						<p class="text-sm font-sans mb-4">
 							Indulge in either an old fashioned or a paloma and enjoy the acoustic entertainment
 							and passed appetizers while we get our photos taken
@@ -34,7 +34,7 @@
 				<div class="left-content__column">
 					<div class="w-5/6" use:reveal={{ delay: 200 }}>
 						<h4 class="text-4xl font-serif mb-4">Reception</h4>
-						<p class="text-base font-sans mb-4">7:00PM</p>
+						<p class="text-base font-sans mb-4">6:30PM</p>
 						<p class="text-sm font-sans mb-4">
 							Feast on our traditional LA tacos whilst we soak in the excitement of becoming newly
 							weds. Afterwards we'll hit the dance floor

@@ -37,4 +37,5 @@
 	>
 		RSVP
 	</a>
+	<p class="mt-10 text-xs italic">Please submit RSVP before Jan 15th, 2024</p>
 </div>

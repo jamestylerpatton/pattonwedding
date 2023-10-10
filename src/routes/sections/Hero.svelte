@@ -19,7 +19,7 @@
 			<span>&</span>
 			<span>Tyler</span>
 		</h1>
-		<p class="text-[12vw] md:text-[6vw] xl:text-[80px] font-script opacity-70">tie the knot</p>
+		<p class="text-[12vw] md:text-[6vw] xl:text-[80px] font-script opacity-70 pl-3">tie the knot</p>
 	</div>
 
 	<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">

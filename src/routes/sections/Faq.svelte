@@ -9,6 +9,16 @@
 
 	const faqItems = [
 		{
+			question: 'How do I RSVP?',
+			answer:
+				'To RSVP, click the <a class="underline" href="#rsvp">RSVP button</a> below and enter using the name(s) listed on your envelope. Kindly RSVP before <u>Friday, January 15th, 2024</u>. If you are unable to attend, please let us know as soon as possible.'
+		},
+		{
+			question: 'What happens if I do not RSVP in time?',
+			answer:
+				'If we do not receive an RSVP by the provided deadline, it will be marked as a "No." We will miss celebrating with you, but we need to provide a total guest count to the venue and vendors shortly after the deadline. Late RSVPs cannot be accepted due to this constraint. We hope you understand!'
+		},
+		{
 			question: 'What is the dress code for the wedding?',
 			answer:
 				'The dress code for our wedding is semi-formal. We encourage guests to dress in cocktail attire. No jeans or shorts please! Also, prepare for average temperatures in the upper 60s to low 50s.'
@@ -51,11 +61,6 @@
 			question: 'Can I leave my car overnight?',
 			answer:
 				'Unfortunately, we cannot accommodate any overnight parking at the venue. We recommend that guests arrange for a designated driver or ride-sharing service if they plan on drinking at the wedding.'
-		},
-		{
-			question: 'How do I RSVP? What happens if I do not RSVP in time?',
-			answer:
-				'To RSVP, click the RSVP tab and type the name(s) listed on your envelope. Kindly RSVP before Friday, January 12th, 2024. If you are unable to attend, please let us know as soon as possible. If we do not receive an RSVP by the provided deadline, it will be marked as a "No." We will miss celebrating with you, but we need to provide a total guest count to the venue and vendors shortly after the deadline. Late RSVPs cannot be accepted due to this constraint. We hope you understand!'
 		},
 		{
 			question: 'Are kids welcome?',
