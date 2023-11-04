@@ -39,30 +39,30 @@
 	bind:this={header}
 	class="fixed z-10 top-0 left-0 w-full flex justify-between items-center px-5 md:px-20 py-10 transition-all duration-300 ease-in-out bg-background bg-opacity-50"
 >
-	<a href="/" class="block mr-6 lg:mr-12 py-6 text-sm lg:text-base opacity-30">#pattonpending</a>
+	<a href="/" class="block mr-6 lg:mr-12 py-6 text-sm xl:text-base opacity-30">#pattonpending</a>
 	{#if $page.url.pathname === '/'}
 		<nav class="flex items-center">
 			<a
 				href="#schedule"
-				class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase lg:text-base"
+				class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase xl:text-base"
 				on:click={handleAnchorClick}>Schedule</a
 			>
 			<a
 				href="#accommodations"
-				class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase lg:text-base"
+				class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase xl:text-base"
 				on:click={handleAnchorClick}
 			>
 				Hotel
 			</a>
 			<a
 				href="#faq"
-				class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase lg:text-base"
+				class="hidden md:block mr-6 lg:mr-12 py-5 text-sm uppercase xl:text-base"
 				on:click={handleAnchorClick}>Faq</a
 			>
-			<!-- <a href="/" class="hidden md:block mr-6 lg:mr-12 py-5 text-sm lg:text-base">Registry</a> -->
+			<!-- <a href="/" class="hidden md:block mr-6 lg:mr-12 py-5 text-sm xl:text-base">Registry</a> -->
 			<a
 				href="/rsvp"
-				class="block uppercase bg-transparent focus:shadow-outline focus:outline-none text-text border-2 border-text py-5 px-5 lg:px-10 rounded cursor-pointer text-sm lg:text-base hover:bg-text hover:text-background transition-all"
+				class="block uppercase bg-transparent focus:shadow-outline focus:outline-none text-text border-2 border-text py-5 px-5 lg:px-10 rounded cursor-pointer text-sm xl:text-base hover:bg-text hover:text-background transition-all"
 			>
 				RSVP
 			</a>

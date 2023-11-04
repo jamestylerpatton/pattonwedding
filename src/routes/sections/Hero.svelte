@@ -8,7 +8,7 @@
 
 <div
 	id="hero"
-	class="w-full min-h-screen flex flex-col justify-center items-center relative px-10 bg-background py-40"
+	class="w-full min-h-screen flex flex-col justify-center items-center relative px-10 bg-background py-60"
 >
 	<div>
 		<p class="text-2xl text-end font-serif mb-4 opacity-70">
