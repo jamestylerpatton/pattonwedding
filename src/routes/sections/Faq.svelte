@@ -51,7 +51,7 @@
 		{
 			question: 'Is there a gift registry?',
 			answer:
-				'We appreciate your presence at our wedding, and your well wishes are the greatest gift we could ask for! However, if you would like to give a gift, instead of a traditional gift registry, we kindly request monetary gifts for our wedding. <a class="underline" href="https://buy.stripe.com/8wM2bXgEM9LpdK8bIJ" target="_blank">Here is a direct link to our fund</a> where you can choose the amount you wish to give. Your generous contributions will be used to create lasting memories and support our future goals together. We appreciate your love and support on this joyous occasion.'
+				'We appreciate your presence at our wedding, and your well wishes are the greatest gift we could ask for! However, if you wish to honour us with a gift, a cash gift would be very welcome! Your generous contributions will be used to create lasting memories and support our future goals together. If you prefer to give a physical gift, we have a registry set up at <a href="https://www.potterybarn.com/registry/mksskl92cj/registry-list.html" target="_blank" class="underline">Pottery Barn, Williams Sonoma and West Elm here</a>.'
 		},
 		{
 			question: 'Will there be parking available at the venue?',

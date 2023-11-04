@@ -36,7 +36,7 @@
 	<!-- Content -->
 	{#if isOpen}
 		<div transition:slide={{ duration: 300 }} class="p-5">
-			<p class="leading-6 font-light text-justify text-sm">
+			<p class="leading-6 font-light text-left text-sm">
 				{@html item.answer}
 			</p>
 		</div>
