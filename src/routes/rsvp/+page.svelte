@@ -86,6 +86,9 @@
 
 		const { data: findData, error: findError } = await findUser(entries);
 
+		// eslint-disable-next-line no-console
+		console.log('findData', findData);
+
 		// return;
 
 		if (findError) {
@@ -112,6 +115,9 @@
 		}
 
 		const { data: updateData, error: updateError } = await updateTable(entries, findData[0]);
+
+		// eslint-disable-next-line no-console
+		console.log('updateData', updateData);
 
 		if (updateError) {
 			modalData = {
