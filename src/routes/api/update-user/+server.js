@@ -1,5 +1,5 @@
 import { supabase } from '$lib/supabaseClient';
-import { resend } from '$lib/resendClient';
+// import { resend } from '$lib/resendClient';
 import { json } from '@sveltejs/kit';
 
 export async function POST({ request }) {
@@ -15,7 +15,7 @@ export async function POST({ request }) {
 		})
 		.eq('id', tableData.id);
 
-	if (!error) {
+	/* if (!error) {
 		const subject = `RSVP updated for ${entryData.first_name} ${entryData.last_name}!`;
 		const body = `
 			<p>First Name: ${entryData.first_name}</p>
@@ -37,7 +37,7 @@ export async function POST({ request }) {
 			// return { error };
 			console.error(error);
 		}
-	}
+	} */
 
 	return json({ data, error });
 }
