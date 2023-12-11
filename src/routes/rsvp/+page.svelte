@@ -17,14 +17,15 @@
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({ entries })
-		}).then((res) => res.json());
+		}).then((res) => {
+			if (res.status !== 200) {
+				return {
+					error: { message: 'Something went wrong. Please call Tyler or Bekah to help :)' }
+				};
+			}
 
-		// const { data, error } = await supabase
-		// 	.from('rsvp_list')
-		// 	.select()
-		// 	.ilike('first_name', `%${entries.first_name?.toLowerCase()}%`)
-		// 	.ilike('last_name', `%${entries.last_name?.toLowerCase()}%`);
-		// return { data, error };
+			return res.json();
+		});
 	}
 
 	async function updateTable(entryData, tableData) {
@@ -34,17 +35,15 @@
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({ entryData, tableData })
-		}).then((res) => res.json());
+		}).then((res) => {
+			if (res.status !== 200) {
+				return {
+					error: { message: 'Something went wrong. Please call Tyler or Bekah to help :)' }
+				};
+			}
 
-		// const { data, error } = await supabase
-		// 	.from('rsvp_list')
-		// 	.update({
-		// 		email: entryData.email,
-		// 		status: entryData.status,
-		// 		notes: entryData.notes
-		// 	})
-		// 	.eq('id', tableData.id);
-		// return { data, error };
+			return res.json();
+		});
 	}
 
 	function validateForm(entries) {
@@ -86,11 +85,6 @@
 
 		const { data: findData, error: findError } = await findUser(entries);
 
-		// eslint-disable-next-line no-console
-		console.log('findData', findData);
-
-		// return;
-
 		if (findError) {
 			modalData = {
 				show: true,
@@ -114,10 +108,9 @@
 			return;
 		}
 
-		const { data: updateData, error: updateError } = await updateTable(entries, findData[0]);
+		const updateRes = await updateTable(entries, findData[0]);
 
-		// eslint-disable-next-line no-console
-		console.log('updateData', updateData);
+		const { data: updateData, error: updateError } = updateRes;
 
 		if (updateError) {
 			modalData = {
