@@ -79,6 +79,8 @@
 
 		// eslint-disable-next-line no-console
 		console.log('entries', entries);
+		entries.first_name = entries.first_name.trim();
+		entries.last_name = entries.last_name.trim();
 
 		const validate = validateForm(entries);
 		if (!validate) return;
