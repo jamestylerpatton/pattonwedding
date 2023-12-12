@@ -128,11 +128,11 @@
 		 * Handle success
 		 */
 		let successHeader = 'You’re In!';
-		let successMessage = `<p>Can’t wait to see you there!</p><p>If there are other guests on your invitation, close this popup and re-submit with their information.</p>`;
+		let successMessage = `<p>Can’t wait to see you there!</p><p>If there are other guests on your invitation, close this popup and re-submit this form with their information separately.</p>`;
 
 		if (entries.status === 'false') {
 			successHeader = 'Sorry you can’t make it!';
-			successMessage = `<p>We’ll miss you!</p><p>If there are other guests on your invitation, close this popup and re-submit with their information.</p>`;
+			successMessage = `<p>We’ll miss you!</p><p>If there are other guests on your invitation, close this popup and re-submit this form with their information separately.</p>`;
 		}
 
 		modalData = {
