@@ -8,8 +8,8 @@ export async function POST({ request }) {
 	const { data, error } = await supabase
 		.from('rsvp_list')
 		.select()
-		.ilike('first_name', `%${entries.first_name?.toLowerCase()}%`)
-		.ilike('last_name', `%${entries.last_name?.toLowerCase()}%`);
+		.ilike('first_name', `${entries.first_name?.toLowerCase()}`)
+		.ilike('last_name', `${entries.last_name?.toLowerCase()}`);
 
 	return json({ data, error });
 }
