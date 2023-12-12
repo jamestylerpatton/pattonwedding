@@ -1,5 +1,4 @@
 <script>
-	import { supabase } from '$lib/supabaseClient';
 	import Modal from './components/Modal.svelte';
 
 	let modalData = {
@@ -35,6 +34,24 @@
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({ entryData, tableData })
+		}).then((res) => {
+			if (res.status !== 200) {
+				return {
+					error: { message: 'Something went wrong. Please call Tyler or Bekah to help :)' }
+				};
+			}
+
+			return res.json();
+		});
+	}
+
+	async function storeEntry(entryData) {
+		return await fetch('/api/store-entry', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({ entryData })
 		}).then((res) => {
 			if (res.status !== 200) {
 				return {
@@ -84,6 +101,9 @@
 
 		const validate = validateForm(entries);
 		if (!validate) return;
+
+		// store entry in database
+		await storeEntry(entries);
 
 		const { data: findData, error: findError } = await findUser(entries);
 

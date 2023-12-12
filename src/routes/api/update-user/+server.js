@@ -13,7 +13,8 @@ export async function POST({ request }) {
 			status: entryData.status,
 			notes: entryData.notes
 		})
-		.eq('id', tableData.id);
+		.eq('id', tableData.id)
+		.select();
 
 	if (!error) {
 		const subject = `RSVP updated for ${entryData.first_name} ${entryData.last_name}!`;
