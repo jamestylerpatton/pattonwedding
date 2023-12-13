@@ -19,7 +19,7 @@
 <!-- <Details /> -->
 <DateDetails />
 <Schedule />
-<Accomodations />
+<!-- <Accomodations /> -->
 <Faq />
 <Rsvp />
 
