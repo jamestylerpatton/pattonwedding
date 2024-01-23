@@ -51,12 +51,12 @@
 			question: 'Can I take photos during the ceremony?',
 			answer:
 				'To ensure that everyone can enjoy the moment fully, please refrain from taking photos or using your mobile devices during the ceremony. We have hired professional photographers who will capture the beautiful moments for us to share. During the reception, you are welcome and encouraged to take photos! Feel free to use our wedding hashtag, #pattonpending, so we can see all the fun!'
-		},
-		{
-			question: 'Is there a gift registry?',
-			answer:
-				'We appreciate your presence at our wedding, and your well wishes are the greatest gift we could ask for! However, if you wish to honour us with a gift, a cash gift would be very welcome! Your generous contributions will be used to create lasting memories and support our future goals together. If you prefer to give a physical gift, we have a registry set up at <a href="https://www.potterybarn.com/registry/mksskl92cj/registry-list.html" target="_blank" class="underline">Pottery Barn, Williams Sonoma and West Elm here</a>.'
 		}
+		// {
+		// 	question: 'Is there a gift registry?',
+		// 	answer:
+		// 		'We appreciate your presence at our wedding, and your well wishes are the greatest gift we could ask for! However, if you wish to honour us with a gift, a cash gift would be very welcome! Your generous contributions will be used to create lasting memories and support our future goals together. If you prefer to give a physical gift, we have a registry set up at <a href="https://www.potterybarn.com/registry/mksskl92cj/registry-list.html" target="_blank" class="underline">Pottery Barn, Williams Sonoma, West Elm</a>, <a href="https://www.target.com/gift-registry/gift/pattonweddingdtla" target="_blank" class="underline">Target</a> and <a href="https://www.amazon.com/wedding/registry/2LIO9KYP843MX" target="_blank" class="underline">Amazon</a>.'
+		// }
 	];
 </script>
 

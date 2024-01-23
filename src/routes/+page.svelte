@@ -6,7 +6,7 @@
 	import Accomodations from './sections/Accomodations.svelte';
 	import Schedule from './sections/Schedule.svelte';
 	import Faq from './sections/Faq.svelte';
-	import Rsvp from './sections/Rsvp.svelte';
+	import Registry from './sections/Registry.svelte';
 </script>
 
 <svelte:head>
@@ -21,7 +21,7 @@
 <Schedule />
 <Accomodations />
 <Faq />
-<Rsvp />
+<Registry />
 
 <style lang="postcss">
 	:global(html) {
