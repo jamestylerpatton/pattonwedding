@@ -3,7 +3,7 @@
 	// import Details from './sections/Details.svelte';
 	import DateDetails from './sections/DateDetails.svelte';
 	import ParallaxPhoto from './sections/ParallaxPhoto.svelte';
-	import Accomodations from './sections/Accomodations.svelte';
+	// import Accomodations from './sections/Accomodations.svelte';
 	import Schedule from './sections/Schedule.svelte';
 	import Faq from './sections/Faq.svelte';
 	import Registry from './sections/Registry.svelte';
@@ -19,7 +19,7 @@
 <!-- <Details /> -->
 <DateDetails />
 <Schedule />
-<Accomodations />
+<!-- <Accomodations /> -->
 <Faq />
 <Registry />
 
