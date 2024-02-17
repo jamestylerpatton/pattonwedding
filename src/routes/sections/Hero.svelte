@@ -3,7 +3,7 @@
 	const targetDate = new Date('March 1, 2024 00:00:00').getTime();
 	const now = new Date().getTime();
 	const distance = targetDate - now;
-	days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	days = Math.floor(distance / (1000 * 60 * 60 * 24)) + 1;
 </script>
 
 <div
