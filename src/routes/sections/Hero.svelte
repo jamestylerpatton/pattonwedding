@@ -4,6 +4,7 @@
 	const now = new Date().getTime();
 	const distance = targetDate - now;
 	days = Math.floor(distance / (1000 * 60 * 60 * 24)) + 1;
+	days = days < 0 ? 0 : days;
 </script>
 
 <div
@@ -12,7 +13,11 @@
 >
 	<div>
 		<p class="text-2xl text-end font-serif mb-4 opacity-70">
-			{days} days until
+			{#if days > 0}
+				{days} days until our wedding!
+			{:else}
+				We're married!
+			{/if}
 		</p>
 		<h1 class="text-[15vw] md:text-[10vw] xl:text-[130px] leading-none font-serif uppercase">
 			<span>Rebekah</span> <br />
